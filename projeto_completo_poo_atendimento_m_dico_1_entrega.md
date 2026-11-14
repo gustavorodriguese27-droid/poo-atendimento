@@ -1,12 +1,12 @@
 # Projeto: Persistência do Sistema de Atendimento Médico (1ª Entrega)
 
-Este guia contém todos os arquivos necessários para montar o projeto `poo-atendimento` conforme a estrutura exigida pela especificação da disciplina de Programação Orientada a Objetos (2026.2), além do documento oficial preenchido para envio no Canvas.
+
 
 ---
 
 ## 1. Estrutura de Pastas do Projeto
 
-Crie uma pasta chamada `poo-atendimento` e organize os arquivos exatamente conforme abaixo:
+
 
 ```text
 poo-atendimento/
@@ -84,7 +84,6 @@ src/main/resources/db.properties
 ```
 
 ### `src/main/resources/db.properties.example`
-*(Copie este arquivo para `src/main/resources/db.properties` na sua máquina e preencha com sua senha real do MySQL).*
 ```properties
 db.url=jdbc:mysql://localhost:3306/atendimento_medico
 db.usuario=root
@@ -699,7 +698,6 @@ public class Main {
 
 ## 4. Diagrama de Classes UML (`docs/diagrama-classes.mmd`)
 
-Cole o código abaixo no [Mermaid Live Editor](https://mermaid.live/) e clique em **Export PNG** para salvar a imagem como `docs/diagrama-classes.png` dentro do seu repositório:
 
 ```mermaid
 classDiagram
@@ -776,35 +774,3 @@ classDiagram
 
 ---
 
-## 5. Documento Oficial Preenchido para Entrega (Canvas)
-
-*(Copie os dados abaixo para a capa e seção 7 do documento Word/PDF oficial antes de submeter no Canvas. Lembre-se de substituir o link do GitHub pelo link real do seu repositório).*
-
-### Capa
-* **Instituição:** UNIFACISA - Centro Universitário
-* **Curso:** Sistemas de Informação / Análise e Desenvolvimento de Sistemas
-* **Disciplina:** Programação Orientada a Objetos - 2026.2
-* **Entrega:** 1ª entrega. Banco de dados, classes de domínio e conexão JDBC
-* **Equipe:**
-  * **Gustavo Rodrigues Oliveira** — Matrícula: **2515050068**
-* **Link do repositório do projeto:** `[INSIRA AQUI O LINK DO SEU REPOSITÓRIO GITHUB]`
-* **Link do vídeo explicativo:** Não enviado (justificado na seção 7).
-* **Professor:** Bruno Rafael Araújo Vasconcelos (`bruno.vasconcelos@maisunifacisa.com.br`)
-
-### Seção 7 — Autoverificação da Equipe
-
-| Ref. | Item | OK |
-| :--- | :--- | :---: |
-| 3.1 | `schema.sql` com o banco `atendimento_medico` e as tabelas `usuarios` e `consultas` exatamente como especificado. | ( X ) |
-| RF02 | `dados.sql` com pelo menos 1 secretária, 2 médicos, 3 pacientes e 4 consultas. | ( X ) |
-| 3.2 | Diagrama de classes UML em `docs/`. | ( X ) |
-| 3.2 | Classes `Usuario` (abstrata), `Medico`, `Secretaria`, `Paciente`, `Consulta` e enums `Perfil` e `StatusConsulta`. | ( X ) |
-| 3.3 | Encapsulamento com validação, herança, abstração e polimorfismo aparecendo no código. | ( X ) |
-| RF03 | `ConexaoBD` lendo `db.properties`; mensagem de sucesso e de erro na conexão. | ( X ) |
-| RF04 | Leitura das tabelas criando objetos das subclasses corretas. | ( X ) |
-| RNF01-03 | `PreparedStatement`, `try-with-resources` e `db.properties` fora do Git. | ( X ) |
-| 4.2 | Vídeo com todos os itens pedidos. | (  ) |
-| 6 | Vídeo, documento e repositório acessíveis para `bruno.vasconcelos@maisunifacisa.com.br`. | ( X ) |
-| 6 | Todos os integrantes enviaram no Canvas. | ( X ) |
-
-**Justificativas (se houver):** O projeto foi desenvolvido individualmente pelo discente Gustavo Rodrigues Oliveira (Matrícula 2515050068). Por indisponibilidade técnica para gravação e edição no prazo estipulado, o vídeo demonstrativo não pôde ser anexado nesta entrega, estando todo o código-fonte, scripts SQL e diagrama UML devidamente estruturados e funcionais no repositório Git vinculado na capa.
